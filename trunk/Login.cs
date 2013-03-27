@@ -20,12 +20,16 @@ namespace Account
         protected Label FailureText;
 		protected TextBox UserName;
 		protected TextBox password;
+        protected HiddenField returnUrl;
+
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
 			this.login.LoggingIn += new System.Web.UI.WebControls.LoginCancelEventHandler(login_LoggingIn);
 			this.login.LoggedIn += new EventHandler(login_LoggedIn);
-            
+
+            if (HttpContext.Current.Request.QueryString["ReturnUrl"] != null)
+                returnUrl.Value = HttpContext.Current.Request.QueryString["ReturnUrl"];
 		}
 
 		void login_LoggingIn(object sender, System.Web.UI.WebControls.LoginCancelEventArgs e)

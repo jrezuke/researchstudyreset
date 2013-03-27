@@ -1,6 +1,6 @@
 <%@ Assembly Name="Microsoft.SharePoint.ApplicationPages, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> 
 <%@ Assembly Name="Account, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d123d34e3b9c32c8" %>
-<%@ Page Language="C#" Inherits="Account.Login" MasterPageFile="~/_layouts/simple.master"      %> 
+<%@ Page Language="C#" Inherits="Account.Login" MasterPageFile="~/_layouts/Account/simple.master"      %> 
 <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %> 
 <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
 <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
@@ -39,6 +39,14 @@
 }
     
 </style>
+<script type="text/javascript" src="/_layouts/jQuery/jquery-1.2.6.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var returnUrl = $("input[id$='returnUrl']").val();
+        var href = "http://childrens01/_layouts/account/ForgotPassword.aspx?ReturnUrl=" + returnUrl;
+        $('#aForgot').attr("href", href);
+    });
+</script>
  <asp:login id="login" FailureText="<%$Resources:wss,login_pageFailureText%>" runat=server width="100%">
     <layouttemplate>
         <asp:label id=FailureText class="ms-error" runat=server/>
@@ -56,22 +64,26 @@
         </tr>
         <tr>
             <td noWrap><SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,login_pageUserName%>" EncodeMethod='HtmlEncode'/></td>
-            <td><asp:textbox id=UserName autocomplete="off" runat=server class="ms-long"/></td>
+            <td><asp:textbox id=UserName autocomplete="off" runat="server" class="ms-long"/></td>
         </tr>
         <tr>
             <td noWrap><SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,login_pagePassword%>" EncodeMethod='HtmlEncode'/></td>
-            <td><asp:textbox id=password TextMode=Password autocomplete="off" runat=server class="ms-long"/></td>
+            <td><asp:textbox id="password" TextMode="Password" autocomplete="off" runat="server" class="ms-long"/></td>
         </tr>
         <tr>
-            <td colSpan=2 align=right><asp:button id=login commandname="Login" text="<%$Resources:wss,login_pagetitle%>" runat=server /></td>
+            <td colSpan=2 align=right><asp:button id="login" commandname="Login" text="<%$Resources:wss,login_pagetitle%>" runat=server /></td>
         </tr>
         <tr>
             <td colSpan=2><asp:CheckBox Visible="false" id=RememberMe text="<%$SPHtmlEncodedResources:wss,login_pageRememberMe%>" runat=server /></td>
         </tr>        
         </table>
-        <div>
-            <a href="http://researchstudy.tch.harvard.edu/_layouts/account/ForgotPassword.aspx">I Forgot My Password</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
+        
     </layouttemplate>
  </asp:login>
+ <div>
+    <%--<input runat="server" type="hidden" id="returnUrl" />--%>
+    <asp:HiddenField id="returnUrl" runat="server" />
+    <%--<a href="http://researchstudy.tch.harvard.edu/_layouts/account/ForgotPassword.aspx">I Forgot My Password</a>&nbsp;&nbsp;&nbsp;&nbsp;--%>
+    <a id="aForgot"  >I Forgot My Password</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 </asp:Content>

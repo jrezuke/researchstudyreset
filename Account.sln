@@ -1,0 +1,46 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account", "Account.csproj", "{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugBuild|Any CPU = DebugBuild|Any CPU
+		DebugDelete|Any CPU = DebugDelete|Any CPU
+		DebugDeploy|Any CPU = DebugDeploy|Any CPU
+		DebugInstall|Any CPU = DebugInstall|Any CPU
+		DebugQuickCopy|Any CPU = DebugQuickCopy|Any CPU
+		DebugQuickCopyAndGAC|Any CPU = DebugQuickCopyAndGAC|Any CPU
+		DebugRedeploy|Any CPU = DebugRedeploy|Any CPU
+		DebugRefreshAssemblyInGac|Any CPU = DebugRefreshAssemblyInGac|Any CPU
+		DebugRetract|Any CPU = DebugRetract|Any CPU
+		DebugUpgrade|Any CPU = DebugUpgrade|Any CPU
+		ReleaseBuild|Any CPU = ReleaseBuild|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugBuild|Any CPU.ActiveCfg = DebugBuild|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugBuild|Any CPU.Build.0 = DebugBuild|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugDelete|Any CPU.ActiveCfg = DebugDelete|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugDelete|Any CPU.Build.0 = DebugDelete|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugDeploy|Any CPU.ActiveCfg = DebugDeploy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugDeploy|Any CPU.Build.0 = DebugDeploy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugInstall|Any CPU.ActiveCfg = DebugInstall|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugInstall|Any CPU.Build.0 = DebugInstall|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugQuickCopy|Any CPU.ActiveCfg = DebugQuickCopy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugQuickCopy|Any CPU.Build.0 = DebugQuickCopy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugQuickCopyAndGAC|Any CPU.ActiveCfg = DebugQuickCopyAndGAC|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugQuickCopyAndGAC|Any CPU.Build.0 = DebugQuickCopyAndGAC|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRedeploy|Any CPU.ActiveCfg = DebugRedeploy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRedeploy|Any CPU.Build.0 = DebugRedeploy|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRefreshAssemblyInGac|Any CPU.ActiveCfg = DebugRefreshAssemblyInGac|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRefreshAssemblyInGac|Any CPU.Build.0 = DebugRefreshAssemblyInGac|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRetract|Any CPU.ActiveCfg = DebugRetract|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugRetract|Any CPU.Build.0 = DebugRetract|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugUpgrade|Any CPU.ActiveCfg = DebugUpgrade|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.DebugUpgrade|Any CPU.Build.0 = DebugUpgrade|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.ReleaseBuild|Any CPU.ActiveCfg = ReleaseBuild|Any CPU
+		{2510B0C7-77B6-497F-B6A8-D63B34DC7E47}.ReleaseBuild|Any CPU.Build.0 = ReleaseBuild|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

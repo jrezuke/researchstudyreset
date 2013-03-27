@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by STSDEV at 11/2/2012 11:01:17 AM-->
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="AppPage1NavigationMenu" GroupId="SiteActions" Location="Microsoft.SharePoint.StandardMenu" Sequence="1001" Title="AppPage1" Description="Navigate to AppPage1">
+    <UrlAction Url="~sitecollection/_layouts/Account/AppPage1.aspx" />
+  </CustomAction>
+  <CustomAction Id="AppPage2NavigationMenu" GroupId="SiteActions" Location="Microsoft.SharePoint.StandardMenu" Sequence="1002" Title="AppPage2" Description="Navigate to AppPage2">
+    <UrlAction Url="~sitecollection/_layouts/Account/AppPage2.aspx" />
+  </CustomAction>
+  <CustomAction Id="AppPage3NavigationMenu" GroupId="SiteActions" Location="Microsoft.SharePoint.StandardMenu" Sequence="1003" Title="AppPage3" Description="Navigate to AppPage3">
+    <UrlAction Url="~sitecollection/_layouts/Account/AppPage3.aspx" />
+  </CustomAction>
+</Elements>

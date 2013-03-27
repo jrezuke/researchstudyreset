@@ -1,0 +1,26 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Tue Mar 26 16:15:58 2013           **
+;**                                                                **
+;** MakeCAB Version: 5.2.3790.0                     **
+;**                                                                **
+;*** BEGIN **********************************************************
+[disk list]
+1,Disk 1
+[cabinet list]
+1,1,Account.wsp
+[file list]
+1,1,manifest.xml,912
+1,1,Account.dll,7680
+1,1,Account\ApplicationPageNavigation.xml,979
+1,1,Account\feature.xml,701
+1,1,IMAGES\Account\AfricanPith32.gif,1523
+1,1,IMAGES\Account\Binoculars32.gif,1445
+1,1,LAYOUTS\Account\ForgotPassword.aspx,1205
+1,1,LAYOUTS\Account\login.aspx,3326
+1,1,LAYOUTS\Account\ResetPassword.aspx,1209
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Tue Mar 26 16:15:58 2013           **
+;**                                                                **
+;*** END ************************************************************

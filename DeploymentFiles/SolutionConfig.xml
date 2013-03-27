@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by STSDEV at 11/2/2012 11:01:16 AM-->
+<Solution>
+  <SolutionId>0467BE27-EBD0-4410-800F-E206B0070470</SolutionId>
+  <SolutionName>Account</SolutionName>
+  <Features>
+    <Feature Primary="True">feature.xml</Feature>
+  </Features>
+  <ResetWebServer>True</ResetWebServer>
+  <AssemblyDeployment>True</AssemblyDeployment>
+  <SafeControlSettings>False</SafeControlSettings>
+  <CasPermissions>False</CasPermissions>
+  <!--Assembly files-->
+  <Assemblies>
+    <Assembly Location="Account.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Account, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d123d34e3b9c32c8" Namespace="Account" TypeName="*" Safe="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+</Solution>

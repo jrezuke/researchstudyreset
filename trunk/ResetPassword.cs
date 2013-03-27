@@ -26,7 +26,7 @@ namespace Account
 
             if(user.ChangePassword(txtOldPw.Text, txtNewPw.Text))
             {
-                lblMessage.Text = "Your password has been changed!";
+                lblMessage.Text = "Your password has been changed! Click the 'Home' button above to go to your home page";
             }
             else
                 lblMessage.Text = "Could not change your password";

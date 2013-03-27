@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by STSDEV at 11/2/2012 11:01:17 AM-->
+<Feature
+  Id="AEF479DC-0B88-4E2D-A43B-9D9CE88B0E1D"
+  Title="A sample feature: Account"
+  Description="This SharePoint solution was created by the STSDEV utility (http://codeplex.com/stsdev)"
+  Version="1.0.0.0"
+  Scope="Site"
+  Hidden="false"
+  ImageUrl="Account\AfricanPith32.gif"
+  ReceiverAssembly="Account, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d123d34e3b9c32c8"
+  ReceiverClass="Account.FeatureReceiver" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest
+      Location="ApplicationPageNavigation.xml" />
+  </ElementManifests>
+</Feature>

@@ -43,7 +43,8 @@
 <script type="text/javascript">
     $(function() {
         var returnUrl = $("input[id$='returnUrl']").val();
-        var href = "http://childrens01/_layouts/account/ForgotPassword.aspx?ReturnUrl=" + returnUrl;
+        //var href = "http://childrens01/_layouts/account/ForgotPassword.aspx?ReturnUrl=" + returnUrl;
+        var href = "http://researchstudy.tch.harvard.edu/_layouts/account/ForgotPassword.aspx?ReturnUrl=" + returnUrl;
         $('#aForgot').attr("href", href);
     });
 </script>

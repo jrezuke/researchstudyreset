@@ -30,6 +30,8 @@ namespace Account
 
             if (HttpContext.Current.Request.QueryString["ReturnUrl"] != null)
                 returnUrl.Value = HttpContext.Current.Request.QueryString["ReturnUrl"];
+            else
+                returnUrl.Value = "notfound";            
 		}
 
 		void login_LoggingIn(object sender, System.Web.UI.WebControls.LoginCancelEventArgs e)

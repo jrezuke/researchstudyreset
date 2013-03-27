@@ -73,7 +73,7 @@ namespace Account {
                     sb.Append(Environment.NewLine);
                     sb.Append(Environment.NewLine);
                     
-                    sb.Append(@"After you log in you can reset your password at http://researchstudy.tch.harvard.edu" + returnUrl + "/_layouts/account/ResetPassword.aspx");
+                    sb.Append(@"After you log in you can reset your password at https://researchstudy.tch.harvard.edu" + returnUrl + "/_layouts/account/ResetPassword.aspx");
                     message.Body = sb.ToString();
 
                     SmtpClient emailClient = new SmtpClient();

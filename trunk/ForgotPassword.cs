@@ -51,7 +51,15 @@ namespace Account {
                     if (HttpContext.Current.Request.QueryString["ReturnUrl"] != null)
                         returnUrl = HttpContext.Current.Request.QueryString["ReturnUrl"];
 
-                    lblMessage.Text = returnUrl;
+                    int pos = 0;
+                    //get first occurance of /
+                    pos = returnUrl.IndexOf("/");
+                    //get second occurance of /
+                    pos = returnUrl.IndexOf("/", pos+1);
+                    //get third occurance of /
+                    pos = returnUrl.IndexOf("/", pos + 1);
+                    returnUrl = returnUrl.Substring(0, pos);
+                    
 
                     StringBuilder sb = new StringBuilder();
 
@@ -64,9 +72,8 @@ namespace Account {
                     sb.Append("Your password has been reset.  Your new password is: " + password);
                     sb.Append(Environment.NewLine);
                     sb.Append(Environment.NewLine);
-                    sb.Append("<strong>Substitute your site name where it says '<insert your site name here>' below)</strong>");
-                        sb.Append(Environment.NewLine);
-                    sb.Append(@"After you log in you can reset your password at http://researchstudy.tch.harvard.edu/<insert your site name here>/_layouts/account/ResetPassword.aspx");
+                    
+                    sb.Append(@"After you log in you can reset your password at http://researchstudy.tch.harvard.edu" + returnUrl + "_layouts/account/ResetPassword.aspx");
                     message.Body = sb.ToString();
 
                     SmtpClient emailClient = new SmtpClient();

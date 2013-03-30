@@ -60,7 +60,7 @@
           <COL WIDTH=75%>
         <tr>
             <td colspan="2">
-                <h4>Please login using username and password.</h4>    
+                <h4>Please login using your user name and password.</h4>    
             </td>
         </tr>
         <tr>

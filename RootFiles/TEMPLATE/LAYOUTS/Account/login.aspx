@@ -75,7 +75,7 @@
             <td colSpan=2 align=right><asp:button id="login" commandname="Login" text="<%$Resources:wss,login_pagetitle%>" runat=server /></td>
         </tr>
         <tr>
-            <td colSpan=2><asp:CheckBox Visible="false" id=RememberMe text="<%$SPHtmlEncodedResources:wss,login_pageRememberMe%>" runat=server /></td>
+            <td colSpan=2><asp:CheckBox Visible="true" id=RememberMe text="<%$SPHtmlEncodedResources:wss,login_pageRememberMe%>" runat=server /></td>
         </tr>        
         </table>
         

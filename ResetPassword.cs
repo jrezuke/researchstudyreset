@@ -23,11 +23,9 @@ namespace Account
         {
             string userName = User.Identity.Name;
             MembershipUser user = Membership.GetUser(userName);
-
-            user.UnlockUser();
+                        
             if(user.ChangePassword(txtOldPw.Text, txtNewPw.Text))
-            {
-                
+            {                
                 lblMessage.Text = "Your password has been changed! Click the 'Home' button above to go to your home page";
             }
             else

@@ -45,7 +45,7 @@ namespace Account {
                     lblMessage.Text = "Your password has been reset.  You should receive an email with your new password soon.";
 
                     MembershipUser user = Membership.GetUser(userName);
-                    //user.UnlockUser();
+                    user.UnlockUser();
                     string password = user.ResetPassword();
 
                     string returnUrl = String.Empty;

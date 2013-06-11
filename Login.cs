@@ -27,6 +27,7 @@ namespace Account
 			base.OnLoad(e);
 			this.login.LoggingIn += new System.Web.UI.WebControls.LoginCancelEventHandler(login_LoggingIn);
 			this.login.LoggedIn += new EventHandler(login_LoggedIn);
+            login.RememberMeSet = true;
 
             if (HttpContext.Current.Request.QueryString["ReturnUrl"] != null)
                 returnUrl.Value = HttpContext.Current.Request.QueryString["ReturnUrl"];
@@ -39,7 +40,7 @@ namespace Account
 			string user = login.UserName;
 			string pwrd = login.Password;
             SPSite site = SPContext.Current.Site;
-
+                        
             if (Membership.ValidateUser(user, pwrd))
             {
                 

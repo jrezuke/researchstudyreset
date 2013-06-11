@@ -1,6 +1,0 @@
-C:\Dev\Account\bin\Debug\Account.dll
-C:\Dev\Account\bin\Debug\Account.pdb
-C:\Dev\Account\obj\DebugBuild\ResolveAssemblyReference.cache
-C:\Dev\Account\obj\DebugBuild\Account.dll
-C:\Dev\Account\obj\DebugBuild\Account.pdb
-C:\Dev\Account\bin\Debug\Microsoft.SharePoint.ApplicationPages.dll

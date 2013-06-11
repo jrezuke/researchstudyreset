@@ -1,6 +1,6 @@
 ;*** BEGIN **********************************************************
 ;**                                                                **
-;** Automatically generated on: Sat Mar 30 07:15:05 2013           **
+;** Automatically generated on: Tue Jun 11 09:29:35 2013           **
 ;**                                                                **
 ;** MakeCAB Version: 5.2.3790.0                     **
 ;**                                                                **
@@ -17,10 +17,10 @@
 1,1,IMAGES\Account\AfricanPith32.gif,1523
 1,1,IMAGES\Account\Binoculars32.gif,1445
 1,1,LAYOUTS\Account\ForgotPassword.aspx,1205
-1,1,LAYOUTS\Account\login.aspx,4013
+1,1,LAYOUTS\Account\login.aspx,4019
 1,1,LAYOUTS\Account\ResetPassword.aspx,1209
 ;*** END ************************************************************
 ;**                                                                **
-;** Automatically generated on: Sat Mar 30 07:15:05 2013           **
+;** Automatically generated on: Tue Jun 11 09:29:35 2013           **
 ;**                                                                **
 ;*** END ************************************************************
